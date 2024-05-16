@@ -1,0 +1,58 @@
+.am_map_container{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(1,1,0,0.7),rgba(0,0,0,0.7)) , url('../../assets/7.jpg');
+}
+
+.am_map_container h1{
+    margin-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.am_map_container p{
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.am_map_container p iframe{
+    width: 800px;
+    height: 600px;
+}
+
+/* Media query for screens with a maximum width of 768px (e.g., tablets and smaller screens) */
+@media screen and (max-width: 768px) {
+    .am_map_container h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .am_map_container p {
+        min-width: 200px;
+        font-size: 14px;
+    }
+
+    .am_map_container p iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+    .am_map_container h1 {
+        font-size: 20px;
+    }
+
+    .am_map_container p {
+        min-width: 150px;
+        font-size: 12px;
+    }
+
+    .am_map_container p iframe {
+        width: 100%;
+        height: auto;
+    }
+}

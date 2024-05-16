@@ -1,0 +1,88 @@
+.big-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/1.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    animation: chbg 20s infinite alternate;
+}
+
+@keyframes chbg {
+    0% {
+        background: url('../../assets/1.jpg');
+        background-size: cover
+    }
+
+    20% {
+        background: url('../../assets/2.jpg');
+        background-size: cover
+    }
+
+    40% {
+        background: url('../../assets/3.jpg');
+        background-size: cover
+    }
+
+    60% {
+        background: url('../../assets/4.jpg');
+        background-size: cover
+    }
+
+    80% {
+        background: url('../../assets/5.jpg');
+        background-size: cover
+    }
+
+    100% {
+        background: url('../../assets/6.jpg');
+        background-size: cover
+    }
+}
+
+
+.main-heading {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.main-heading h1 {
+    font-size: 340%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-heading {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-heading {
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .main-heading h1 {
+        font-size: 180%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .main-heading {
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .main-heading h1 {
+        font-size: 130%;
+    }
+}

@@ -1,0 +1,51 @@
+.am_gal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    padding: 10px;
+}
+
+.am_gal_image_container{
+    padding: 5px;
+    
+}
+
+.am_gal_image_container img{
+    max-width: 400px;
+    height: auto;
+}
+
+
+.am_gal_text{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+
+@media (max-width: 767px) {
+    .am_gal {
+        grid-template-columns: 1fr;
+    }
+
+    .am_gal_image_container img {
+        max-width: 100%;
+    }
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .am_gal {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media query for screens larger than 992px (e.g., desktops) */
+@media (min-width: 992px) {
+    /* You can add specific styles for larger screens here if needed */
+}

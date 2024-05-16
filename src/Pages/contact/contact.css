@@ -1,0 +1,196 @@
+.big-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/1.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    animation: chbg 20s infinite alternate;
+}
+
+@keyframes chbg {
+    0% {
+        background: url('../../assets/1.jpg');
+        background-size: cover
+    }
+
+    20% {
+        background: url('../../assets/2.jpg');
+        background-size: cover
+    }
+
+    40% {
+        background: url('../../assets/3.jpg');
+        background-size: cover
+    }
+
+    60% {
+        background: url('../../assets/4.jpg');
+        background-size: cover
+    }
+
+    80% {
+        background: url('../../assets/5.jpg');
+        background-size: cover
+    }
+
+    100% {
+        background: url('../../assets/6.jpg');
+        background-size: cover
+    }
+}
+
+.am__contact-section {
+    padding: 1rem;
+    height: 90vh;
+}
+
+.am__contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.am__contact-section-container h1 {
+    font-size: 65px;
+    margin-top: 30px;
+
+}
+
+.am-contact-container {
+    padding: 60px;
+}
+
+
+.am__contact-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    height: 150px;
+    margin-top: 30px;
+}
+
+
+.am__contact-div p,
+.am__contact-div h4 {
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0.5rem 0;
+}
+
+.gradient-heading {
+    background-image: linear-gradient(180deg, rgb(197, 166, 166), grey);
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-text {
+    background-image: linear-gradient(90deg, rgb(218, 164, 164), rgb(182, 180, 180));
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-info {
+    background-image: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Media query for small screens (e.g. mobile devices) */
+@media (max-width: 375px) {
+    .big-background {
+        height: 30vh;
+    }
+
+    .am__contact-section-container h1 {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .am-contact-container {
+        padding: 0;
+    }
+
+    .am__contact-div p,
+    .am__contact-div h4 {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0.5rem 0;
+    }
+
+    /* Add other style adjustments for small screens here */
+}
+
+/* Media query for screens with a width of 376px to 768px (e.g. tablets) */
+@media (min-width: 376px) and (max-width: 768px) {
+    .big-background {
+        height: 50vh;
+    }
+
+    .am__contact-section-container h1 {
+        font-size: 45px;
+        margin-top: 20px;
+    }
+
+    .am-contact-container {
+        padding: 0;
+    }
+
+    .am__contact-div p,
+    .am__contact-div h4 {
+        font-size: 28px;
+        line-height: 28px;
+        margin: 0.5rem 0;
+    }
+
+    /* Add other style adjustments for mid-sized screens here */
+}
+
+/* Media query for screens with a width of 769px to 900px */
+@media (min-width: 769px) and (max-width: 900px) {
+    .am__contact-section-container h1 {
+        font-size: 55px;
+        margin-top: 25px;
+    }
+
+    .am__contact-div p,
+    .am__contact-div h4 {
+        font-size: 40px;
+        line-height: 40px;
+        margin: 0.5rem 0;
+    }
+
+    /* Add other style adjustments for screens in this range */
+}
+
+/* Media query for screens with a width of 901px to 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .am__contact-section-container h1 {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+
+    .am__contact-div p,
+    .am__contact-div h4 {
+        font-size: 45px;
+        line-height: 45px;
+        margin: 0.5rem 0;
+    }
+
+    /* Add other style adjustments for screens in this range */
+}
+
+/* Media query for larger screens (e.g. desktops) */
+@media (min-width: 1201px) {
+    .am__contact-section-container h1 {
+        font-size: 65px;
+        margin-top: 35px;
+    }
+
+    .am__contact-div p,
+    .am__contact-div h4 {
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0.5rem 0;
+    }
+
+    /* Add other style adjustments for larger screens here */
+}
